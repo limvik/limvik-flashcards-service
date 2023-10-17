@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:tc:mysql:8.1.0:///
+  cloud:
+    config:
+      enabled: false
