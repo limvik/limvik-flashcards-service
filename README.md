@@ -10,3 +10,4 @@ Spring Data JPA, MySQL, FlyWay
 ## 구현 과정
 
 1. [Spring Boot 프로젝트 생성 및 설정](./documents/0001.create_project.md)
+2. [데이터베이스 설계](./documents/0002.design_database.md)
