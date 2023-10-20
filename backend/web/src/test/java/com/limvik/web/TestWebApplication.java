@@ -1,4 +1,4 @@
-package com.limvik.backend;
+package com.limvik.web;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.test.context.TestConfiguration;
@@ -8,16 +8,16 @@ import org.testcontainers.containers.MySQLContainer;
 import org.testcontainers.utility.DockerImageName;
 
 @TestConfiguration(proxyBeanMethods = false)
-public class TestBackendApplication {
+public class TestWebApplication {
 
-	@Bean
-	@ServiceConnection
-	MySQLContainer<?> mysqlContainer() {
-		return new MySQLContainer<>(DockerImageName.parse("mysql:8.1.0"));
-	}
+    @Bean
+    @ServiceConnection
+    MySQLContainer<?> mysqlContainer() {
+        return new MySQLContainer<>(DockerImageName.parse("mysql:8.1.0"));
+    }
 
-	public static void main(String[] args) {
-		SpringApplication.from(BackendApplication::main).with(TestBackendApplication.class).run(args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.from(WebApplication::main).with(TestWebApplication.class).run(args);
+    }
 
 }

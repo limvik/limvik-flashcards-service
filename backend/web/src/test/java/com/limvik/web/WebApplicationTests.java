@@ -1,4 +1,4 @@
-package com.limvik.backend;
+package com.limvik.web;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -6,7 +6,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("integration")
-class BackendApplicationTests {
+class WebApplicationTests {
 
 	@Test
 	void contextLoads() {

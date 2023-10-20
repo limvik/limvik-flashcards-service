@@ -9,3 +9,11 @@ server:
   servlet:
     encoding:
       force-response: true
+
+spring:
+  application:
+    name: flashcards-service
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: true
